@@ -1,12 +1,11 @@
 # What I checked, and what the agent got wrong
 
-Write this yourself, in your own words. It is the part of the repo that proves the work is yours.
 
 ## What the agent got wrong
-(Every agent gets something wrong on a job this size. What did you catch? How did you notice?)
+analyze.py initally opened the CSV and crashed.
 
 ## What I checked before I accepted its work
-(How do you KNOW the wear bug is fixed and the 80% rule is untouched? What did you run?)
+I ran verify.py and many of the constants stayed untouched. 
 
 ## What the data actually said
-(Which factors predict a breakdown, and which obvious-looking one turned out not to?)
+Milage and age are identical between broken and working cars. They are useless info, just misleading. The real signals are km_since_service and load_factor.
